@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+
+    </head>
+    <style>
+        #const
+        {
+            display: block;
+            max-block-size: 200px;
+            opacity:.1;
+        }
+        #const:hover
+        {
+            opacity: 1;
+        }
+        .col
+        {
+            float: left;
+            width: 12.5%;
+            padding: 125px;
+        }
+        .row::after
+        {
+            content: "";
+            clear: both;
+            display: table; 
+        }
+    </style>
+    <body>
+        <div class="space">  
+            <div class="navbar" id="nav">           
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <div class="dropdown">
+                    <button onclick="drop()" class="dropbtn">Planets</button>
+                    <div id="planets" class="dropdown-content">
+                        <a href="mercury.html">Mercury</a>
+                        <a href="venus.html">Venus</a>
+                        <a href="earth.html">Earth</a>
+                        <a href="mars.html">Mars</a>
+                        <a href="jupiter.html">Jupiter</a>
+                        <a href="saturn.html">Saturn</a>
+                        <a href="uranus.html">Uranus</a>
+                        <a href="neptune.html">Neptune</a> 
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
+            </div>
+            <script src="navbarMobile.js"></script>
+            <script src="dropdown.js"></script>       
+        </div>
+        <h1>Space, the final frontier</h1>
+        <div class="row">
+            <div class="col">
+            <img src="gemini.jpg" id="const">
+            <img src="hydra.jpg" id="const">
+            <img src="pisces.jpg" id="const">
+            </div>
+            <div class="col">
+            <img src="scorpius.jpg" id="const">
+            <img src="taurus.jpg" id="const">
+            <img src="ursaM.jpg" id="const">
+            </div>
+            <div class="col">
+            <img src="perseus.jpg" id="const">
+            <img src="orion.jpg" id="const">
+            <img src="leo.jpg" id="const">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="quiz.css"/>
+        <script src = "quiz.js"></script>
+    </head>
+   
+    <body>
+        <a href="games.html" id ="back">Back</a>
+        <h1>Let's Play a Game</h1>
+        <form id = "quiz" name = "quiz">
+        <fieldset id = "Trivia">
+        <legend>Planet Quiz</legend>
+            <p>Which planet is closest to the sun</p>
+            <input type = "radio" id = "mc" name = "q1" value ="Jupiter">Jupiter<br> 
+            <input type = "radio" id = "mc" name = "q1" value ="Saturn">Saturn<br> 
+            <input type = "radio" id = "mc" name = "q1" value ="Neptune">Neptune<br> 
+            <input type = "radio" id = "mc" name = "q1" value ="Earth">Earth<br> 
+            <input type = "radio" id = "mc" name = "q1" value ="Uranus">Uranus<br> 
+            <input type = "radio" id = "mc" name = "q1" value ="Mercury">Mercury<br> 
+            <input type = "radio" id = "mc" name = "q1" value ="Venus">Venus<br> 
+            <input type = "radio" id = "mc" name = "q1" value ="Mars">Mars<br> 
+
+            <p>Which planet is farthest from the sun</p>
+            <input type = "radio" id = "mc" name = "q2" value ="Jupiter">Jupiter<br> 
+            <input type = "radio" id = "mc" name = "q2" value ="Saturn">Saturn<br> 
+            <input type = "radio" id = "mc" name = "q2" value ="Neptune">Neptune<br> 
+            <input type = "radio" id = "mc" name = "q2" value ="Earth">Earth<br> 
+            <input type = "radio" id = "mc" name = "q2" value ="Uranus">Uranus<br> 
+            <input type = "radio" id = "mc" name = "q2" value ="Mercury">Mercury<br> 
+            <input type = "radio" id = "mc" name = "q2" value ="Venus">Venus<br> 
+            <input type = "radio" id = "mc" name = "q2" value ="Mars">Mars<br>
+            
+            <p>Which planet is the heaviest?</p>
+            <input type = "radio" id = "mc" name = "q3" value ="Jupiter">Jupiter<br> 
+            <input type = "radio" id = "mc" name = "q3" value ="Saturn">Saturn<br> 
+            <input type = "radio" id = "mc" name = "q3" value ="Neptune">Neptune<br> 
+            <input type = "radio" id = "mc" name = "q3" value ="Earth">Earth<br> 
+            <input type = "radio" id = "mc" name = "q3" value ="Uranus">Uranus<br> 
+            <input type = "radio" id = "mc" name = "q3" value ="Mercury">Mercury<br> 
+            <input type = "radio" id = "mc" name = "q3" value ="Venus">Venus<br> 
+            <input type = "radio" id = "mc" name = "q3" value ="Mars">Mars<br>
+            
+            <p>Which planet is the hottest?</p>
+            <input type = "radio" id = "mc" name = "q4" value ="Jupiter">Jupiter<br> 
+            <input type = "radio" id = "mc" name = "q4" value ="Saturn">Saturn<br> 
+            <input type = "radio" id = "mc" name = "q4" value ="Neptune">Neptune<br> 
+            <input type = "radio" id = "mc" name = "q4" value ="Earth">Earth<br> 
+            <input type = "radio" id = "mc" name = "q4" value ="Uranus">Uranus<br> 
+            <input type = "radio" id = "mc" name = "q4" value ="Mercury">Mercury<br> 
+            <input type = "radio" id = "mc" name = "q4" value ="Venus">Venus<br> 
+            <input type = "radio" id = "mc" name = "q4" value ="Mars">Mars<br>
+
+            <p>how many moons does Uranus have? <input type ="text" id="textbox" name = "q5"></p>
+
+            <p>Earth is <input type = "text" id = "textbox" name = "q6"> million miles from the sun</p>
+
+            <p>Jupiter's mass is equivalent to about <input type = "text" id = "textbox" name = "q7"> Earths</p>
+
+            <p>What is the name of the planet that was downgraded to that of a dwarf planet? <input type = "text" id = "textbox" name = "q8"></p>
+            
+            <input id = "button" type = "button" value = "Done" onclick = "check();">
+        </fieldset>     
+        </form>
+        <div id= "submitted">
+            <p id = "no_correct">hii</p>
+        </div>
+    </body>
+</html>

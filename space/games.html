@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+   <style>
+       body
+        {
+            background-image: url("space.jpg");
+            background-size: cover;
+        }
+       #gamePic
+        {
+            max-width: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+            border-radius: 25px;
+        }
+        #games
+        {
+            background: rgba(0, 0, 0, 0.5);
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+   </style>
+    <body>
+        <div class="space">  
+            <div class="navbar" id="nav">           
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <div class="dropdown">
+                    <button onclick="drop()" class="dropbtn">Planets</button>
+                    <div id="planets" class="dropdown-content">
+                        <a href="mercury.html">Mercury</a>
+                        <a href="venus.html">Venus</a>
+                        <a href="earth.html">Earth</a>
+                        <a href="mars.html">Mars</a>
+                        <a href="jupiter.html">Jupiter</a>
+                        <a href="saturn.html">Saturn</a>
+                        <a href="uranus.html">Uranus</a>
+                        <a href="neptune.html">Neptune</a> 
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
+            </div>
+            <script src="navbarMobile.js"></script>
+            <script src="dropdown.js"></script>       
+        </div>
+        <div id="games">
+        <a href="quiz.html"><img src = "quizPhoto.jpg" id = "gamePic"></a>
+        <p>Quiz Game <br>Do you know your planets?</p>
+        <a href="https://spaceplace.nasa.gov/switch-a-roo/en/"><img src="switch.PNG" id="gamePic"></a>
+        <p>Solar System Switch-a-Roo<br>Can you watch the planets with each other?</p>
+        <a href="https://spaceplace.nasa.gov/stained-glass-earth/en/"><img src="earth.jpg" id="gamePic"></a>
+        <p>Make a Stained Glass Earth</p>
+        <a href="https://spaceplace.nasa.gov/solar-system-explorer/en/#/review/solar-system-explorer/game.swf"><img src="explore.PNG" id="gamePic"></a>
+        <p>Explore the Solar System</p>
+        <a href="https://spaceplace.nasa.gov/comet-quest/en/#/review/comet-quest/CometQuest.swf"><img src="quest.PNG" id="gamePic"></a>
+        <p>Comet Quest</p>
+        </div>
+    </body>
+</html>

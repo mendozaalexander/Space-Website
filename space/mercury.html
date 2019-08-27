@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <style>
+        body
+        {
+            background-image: url("mercury.jpg");
+            background-size: auto;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <body>
+        <div class="space">  
+                <div class="navbar" id="nav">           
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <div class="dropdown">
+                        <button onclick="drop()" class="dropbtn">Planets</button>
+                        <div id="planets" class="dropdown-content">
+                            <a href="mercury.html">Mercury</a>
+                            <a href="venus.html">Venus</a>
+                            <a href="earth.html">Earth</a>
+                            <a href="mars.html">Mars</a>
+                            <a href="jupiter.html">Jupiter</a>
+                            <a href="saturn.html">Saturn</a>
+                            <a href="uranus.html">Uranus</a>
+                            <a href="neptune.html">Neptune</a> 
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
+                </div>
+                <script src="navbarMobile.js"></script>
+                <script src="dropdown.js"></script>       
+        </div>
+        <h1>The planet Mercury</h1>
+        <p>
+            Placeholder info
+        </p>
+        <iframe width = "420" height = "300" src="https://www.youtube.com/embed/0KBjnNuhRHs"></iframe>
+    </body>
+</html>

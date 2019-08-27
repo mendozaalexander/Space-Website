@@ -1,0 +1,165 @@
+body
+{
+    background-image: url("space.jpg");
+}
+
+.navbar
+{
+    overflow: hidden;
+    background-image: url("stars2.jpg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar a
+{
+    float: left;
+    color: bisque;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 200px 15px 200px;
+    text-decoration: none;
+}
+.navbar a:hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus
+{
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+.dropdown
+{
+    float: center;
+    overflow: hidden;
+}
+.navbar .icon
+{
+    display: none;
+}
+
+@media screen and (max-width: 600px)
+{
+    .dropdown
+    {
+        float: left;
+        overflow: hidden;
+    }
+    .navbar a:not(:first-child), .dropdown .dropbtn
+    {
+        display: none;
+    }
+    .navbar a.icon 
+    {
+        float: right;
+        display: block;
+    }
+    .navbar a
+    {
+        display: block;
+        float: left;
+        color: bisque;
+        text-align: center;
+        font-size: 16px;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .dropdown .dropbtn
+    {
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: bisque;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    .dropdown-content a
+    {
+        float: none;
+        color: antiquewhite;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar.responsive
+    {
+        position: relative;
+    }
+    .navbar.responsive a.icon 
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar.responsive .dropdown
+    {
+        float: none;
+    }
+    .navbar.responsive .dropdown-content
+    {
+        position: relative;
+    }
+    .navbar.responsive .dropdown .dropbtn
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+.dropdown .dropbtn
+{
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: bisque;
+    padding:  10px 200px 15px 200px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-image: url("stars2.jpg");
+    max-width: 453px;
+    z-index: 1;
+}
+.dropdown-content a
+{
+    float: none;
+    color: antiquewhite;
+    padding:  10px 200px 15px 200px;
+    text-decoration: none;
+    display: block;
+}
+.show
+{
+    display: block;
+}
+h1
+{
+    color: antiquewhite;
+    text-align: center;
+}
+p
+{
+    color: antiquewhite; 
+    text-align: center;
+}
+iframe
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
